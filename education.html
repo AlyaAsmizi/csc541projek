@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Silkscreen:wght@400;700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		margin: 0;
+		background-color: #9A8682;
+		background-image: url(image/grain.png);
+		font-family: 'Poppins' , sans-serif;
+	}
+	/*navigation bar*/
+    .navbar {
+        overflow: hidden;
+        background-color: #9E3B3B;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        text-align: center;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .navbar a {
+        font-family: 'Poppins' , sans-serif;
+        text-decoration: none;
+        color: #631818;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        margin: 0 1rem;
+    }
+	.navbar a:hover{
+        color: #CD5B5B;
+        text-shadow: 0 0 15px #631818;
+    }
+	.container {
+		background-color: lightgray;
+		width: 70%; /* Full width */
+		height: 80vh; /* Full height */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		border-radius: 20px;
+		overflow: hidden;
+		padding-bottom: 45px;
+	}
+	h2 {
+		font-family: "Silkscreen", sans-serif;
+		font-size: 2.5rem;
+		color: #9E3B3B;
+		text-align: center;
+	}
+	table {
+		width: 90%;
+		height: auto;
+	}
+	tr {
+		background-color: lightgray ;
+	}
+	tr:first-child {
+		background-color: #991512;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="myself.html">Myself</a>
+        <a href="education.html">Education</a>
+        <a href="passion.html">Passion</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="comment.html">Comment</a>
+    </div>
+	<div class="container">
+		<h2>Academic Journey</h2>
+		<p>2010-2015 SK Subang Jaya, Subang Jaya</p>
+		<p>2016-2020 SMKA Tun Rahah, Sabak Bernam</p>
+		<p>2021-2022 Kolej Matrikulasi Perak, Gopeng</p>
+		<p>2022-now UiTM Shah Alam, Shah Alam</p>
+		
+		<p></p>
+		<table bgcolor=#991512 border=1>
+		<caption><b><i> My Degree Sem 4 Schedule </b></i></caption>
+		<tr><th>Day</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th></tr>
+		<tr><td><center>8-10</center></td><td>CSC541</td><td>CSC541</td><td>ELC650</td><td>break</td><td>CSC584</td></tr>
+		<tr><td><center>10-12</center></td><td>CSC566</td><td colspan=2><center>break</center></td><td>CSC508</td><td>CSC577</td></tr>
+		<tr><td><center>12-2</center></td><td colspan=3><center>break</center></td><td colspan=2><center>break</center></td></tr>
+		<tr><td><center>2-4</center></td><td>CSC584</td><td>CST2AD</td><td></td><td colspan=2><center>break</center></td></tr>
+		<tr><td><center>4-6</center></td><td>break</td><td>CSC577</td><td>CSC508</td><td colspan=2><center>break</center></td></tr>
+		</table>
+	</div>
+</body>
+</html>
