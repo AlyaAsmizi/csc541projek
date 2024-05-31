@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Silkscreen:wght@400;700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		margin: 0;
+		background-color: #9A8682;
+		background-image: url(image/grain.png);
+		font-family: 'Poppins' , sans-serif;
+	}
+	/*navigation bar*/
+    .navbar {
+        overflow: hidden;
+        background-color: #9E3B3B;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        text-align: center;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .navbar a {
+        font-family: 'Poppins' , sans-serif;
+        text-decoration: none;
+        color: #631818;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        margin: 0 1rem;
+    }
+	.navbar a:hover{
+        color: #CD5B5B;
+        text-shadow: 0 0 15px #631818;
+    }
+	#gallery {
+		padding-top: 100px;
+	}
+	.image {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 230px;
+		padding-bottom: 50px;
+	}
+	figure {
+		width: 40px;
+		height: 260px;
+		display: flex;
+		flex: 0 1 20%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		background-color: #fff; 
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+		transition: transform 0.2s ease-in-out;
+	}
+	figure:hover {
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+		transform: scale(1.1);
+    }
+	figure img {
+		object-fit: cover;
+		width: 100%;
+		height: 200px;
+		margin-top: 15px;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-bottom: 40px;
+	}
+</style>
+</head>
+<body>
+	<div class="navbar">
+        <a href="index.php">Home</a>
+        <a href="myself.php">Myself</a>
+        <a href="education.php">Education</a>
+        <a href="passion.php">Passion</a>
+		<a href="gallery.php">Gallery</a>
+		<a href="comment.php">Comment</a>
+    </div>
+	<div id="gallery">
+		<div class="image">
+			<figure>
+				<img src="image/ramen.jpg" alt="Image 1">
+			</figure>
+			<figure>
+				<img src="image/coffee.jpg" alt="Image 2">
+			</figure>
+			<figure>
+				<img src="image/burger.jpg" alt="Image 3">
+			</figure>
+			<figure>
+				<img src="image/croffle.jpg" alt="Image 4">
+			</figure>
+			<figure>
+				<img src="image/roll.jpg" alt="Image 5">
+			</figure>
+			<figure>
+				<img src="image/laksa.jpg" alt="Image 6">
+			</figure>
+			<figure>
+				<img src="image/dodo.jpg" alt="Image 7">
+			</figure>
+			<figure>
+				<img src="image/cookie.jpg" alt="Image 8">
+			</figure>
+			<figure>
+				<img src="image/sukiya.jpg" alt="Image 9">
+			</figure>
+		</div>
+	</div>
+</body>
+</html>
